@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aman Singh - Software Developer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.4;
+            color: #333;
+            background: white;
+        }
+        
+        .resume-container {
+            display: flex;
+            max-width: 8.5in;
+            min-height: 11in;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        
+        .sidebar {
+            width: 35%;
+            background: #2c3e50;
+            color: white;
+            padding: 30px 25px;
+        }
+        
+        .main-content {
+            width: 65%;
+            padding: 30px;
+        }
+        
+        .name {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .title {
+            font-size: 14px;
+            color: #ecf0f1;
+            margin-bottom: 25px;
+            font-weight: 300;
+        }
+        
+        .section-title {
+            font-size: 16px;
+            font-weight: bold;
+            margin: 25px 0 15px 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: white;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+        }
+        
+        .main-section-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 25px 0 15px 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+        }
+        
+        .main-section-title:first-child {
+            margin-top: 0;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            font-size: 12px;
+        }
+        
+        .contact-icon {
+            width: 16px;
+            margin-right: 10px;
+            text-align: center;
+        }
+        
+        .contact-link {
+            text-decoration: none;
+            color: #ecf0f1;
+        }
+        
+        .contact-link:hover {
+            color: #3498db;
+        }
+        
+        .skills-category {
+            margin-bottom: 15px;
+        }
+        
+        .skills-category-title {
+            font-weight: bold;
+            font-size: 13px;
+            margin-bottom: 5px;
+            color: #3498db;
+        }
+        
+        .skills-list {
+            font-size: 11px;
+            line-height: 1.3;
+        }
+        
+        .job-title {
+            font-weight: bold;
+            font-size: 15px;
+            color: #2c3e50;
+        }
+        
+        .company {
+            font-size: 13px;
+            color: #3498db;
+            font-weight: 600;
+        }
+        
+        .duration {
+            font-size: 12px;
+            color: #7f8c8d;
+            float: right;
+        }
+        
+        .job-description {
+            margin: 8px 0 20px 0;
+        }
+        
+        .job-description li {
+            font-size: 12px;
+            margin-bottom: 4px;
+            list-style-type: none;
+            position: relative;
+            padding-left: 15px;
+        }
+        
+        .job-description li:before {
+            content: "•";
+            color: #3498db;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        
+        .project-name {
+            font-weight: bold;
+            font-size: 13px;
+            color: #2c3e50;
+        }
+        
+        .project-tech {
+            font-size: 11px;
+            color: #3498db;
+            font-style: italic;
+        }
+        
+        .project-description {
+            font-size: 12px;
+            margin: 5px 0 15px 0;
+            line-height: 1.3;
+        }
+        
+        .education-item {
+            margin-bottom: 10px;
+        }
+        
+        .degree {
+            font-weight: bold;
+            font-size: 13px;
+            margin-bottom: 2px;
+        }
+        
+        .university {
+            font-size: 12px;
+            color: #ecf0f1;
+        }
+        
+        .gpa {
+            font-size: 11px;
+            color: #3498db;
+        }
+        
+        .achievements {
+            font-size: 11px;
+            line-height: 1.3;
+        }
+        
+        .achievements li {
+            margin-bottom: 3px;
+            list-style-type: none;
+            position: relative;
+            padding-left: 12px;
+        }
+        
+        .achievements li:before {
+            content: "★";
+            color: #f39c12;
+            position: absolute;
+            left: 0;
+        }
+        
+        .summary {
+            font-size: 13px;
+            line-height: 1.4;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+        
+        @media print {
+            .resume-container {
+                box-shadow: none;
+                margin: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="resume-container">
+        <div class="sidebar">
+            <div class="name">Aman Singh</div>
+            <div class="title">Software Developer</div>
+            
+            <div class="section-title">Contact</div>
+            <div class="contact-item">
+                <span class="contact-icon">📧</span>
+                <a href="mailto:aman.singh.sdev@gmail.com" class="contact-link">aman.singh.sdev@gmail.com</a>
+            </div>
+            <div class="contact-item">
+                <span class="contact-icon">📱</span>
+                <a href="tel:+919071094054" class="contact-link">+91 9071094054</a>
+            </div>
+            <div class="contact-item">
+                <span class="contact-icon">📍</span>
+                Lucknow, India
+            </div>
+            <div class="contact-item">
+                <span class="contact-icon">💼</span>
+                <a href="https://linkedin.com/in/simplyuix" class="contact-link">LinkedIn Profile</a>
+            </div>
+            <div class="contact-item">
+                <span class="contact-icon">🔗</span>
+                <a href="https://github.com/simplyuix" class="contact-link">GitHub Profile</a>
+            </div>
+            
+            <div class="section-title">Technical Skills</div>
+            <div class="skills-category">
+                <div class="skills-category-title">Backend Languages</div>
+                <div class="skills-list">Go, Node.js, Python, JavaScript, TypeScript</div>
+            </div>
+            <div class="skills-category">
+                <div class="skills-category-title">Frameworks</div>
+                <div class="skills-list">Express.js, RESTful APIs, WebSockets</div>
+            </div>
+            <div class="skills-category">
+                <div class="skills-category-title">Databases</div>
+                <div class="skills-list">MongoDB, SQL, PostgreSQL, ORMs, Mongoose</div>
+            </div>
+            <div class="skills-category">
+                <div class="skills-category-title">Cloud & DevOps</div>
+                <div class="skills-list">Docker, Kubernetes, Azure, CI/CD, Terraform, Linux</div>
+            </div>
+            <div class="skills-category">
+                <div class="skills-category-title">Testing & Tools</div>
+                <div class="skills-list">Unit Testing, API Testing, TDD, Git, System Monitoring</div>
+            </div>
+            
+            <div class="section-title">Education</div>
+            <div class="education-item">
+                <div class="degree">B.Tech Computer Science</div>
+                <div class="university">IIIT Naya Raipur</div>
+                <div class="gpa">CGPA: 8.6/10 | FFE Scholar</div>
+                <div class="gpa">Dec 2020 - May 2024</div>
+            </div>
+            
+            <div class="section-title">Achievements</div>
+            <ul class="achievements">
+                <li>Global Rank 2, CodeChef Div 3</li>
+                <li>Runner-up, 1st CNI Hackathon</li>
+                <li>Published in IEEE Journal</li>
+                <li>ChatGPT Prompt Engineering Certified</li>
+            </ul>
+        </div>
+        
+        <div class="main-content">
+            <div class="main-section-title">Summary</div>
+            <div class="summary">
+                Backend Engineer with 1.5+ years of experience designing and developing scalable microservices and RESTful APIs. Proficient in building distributed systems, implementing test-driven development, and deploying applications in cloud environments. Experienced in handling high-volume API traffic and optimizing system performance.
+            </div>
+            
+            <div class="main-section-title">Experience</div>
+            
+            <div class="job-title">Graduate Engineer</div>
+            <div class="company">Carl Zeiss AG, Bangalore <span class="duration">Jan 2024 - Present</span></div>
+            <ul class="job-description">
+                <li>Built RESTful APIs with robust authentication handling 1,000+ daily requests for secure data exchange across multiple internal services</li>
+                <li>Implemented microservices architecture for data processing workflows, reducing processing time by 5 days and improving accuracy by 10%</li>
+                <li>Optimized API response times by 20% through efficient caching strategies and database query optimization</li>
+                <li>Designed scalable backend systems serving 8,000+ users with asynchronous processing and optimized resource management</li>
+                <li>Developed role-based access control for enterprise applications, improving data security and reducing processing time by 15%</li>
+            </ul>
+            
+            <div class="job-title">Teaching Assistant</div>
+            <div class="company">IIIT Naya Raipur <span class="duration">Oct 2023 - Jan 2024</span></div>
+            <ul class="job-description">
+                <li>Mentored students in Data Structures and Algorithms, conducting code reviews and debugging sessions</li>
+                <li>Designed coding exercises focusing on algorithmic problem-solving and software engineering best practices</li>
+            </ul>
+            
+            <div class="main-section-title">Projects</div>
+            
+            <div class="project-name">MCP Tool Server (Multi-Service Backend)</div>
+            <div class="project-tech">Bun, Model Context Protocol, REST APIs, JavaScript</div>
+            <div class="project-description">
+                Developed a sophisticated backend server implementing Model Context Protocol (MCP) exposing multiple tool APIs: geographic weather data (current + 5-day forecast), and URL shortening service. Built with modern Bun runtime, includes built-in client demonstrating cross-service communication and API integration patterns.
+            </div>
+            
+            <div class="project-name">Interactive Document Management System</div>
+            <div class="project-tech">Node.js, Express.js, MongoDB, React, REST APIs</div>
+            <div class="project-description">
+                Built a full-stack web application with RESTful API backend using Express.js and MongoDB for persistent storage. Implemented CRUD operations for dynamic document cards with features like drag-and-drop, real-time updates, and responsive design. Backend handles API endpoints for creating, reading, and deleting documents with proper CORS configuration.
+            </div>
+            
+            <div class="project-name">DevOps Automation Platform</div>
+            <div class="project-tech">Kubernetes, Terraform, GitOps</div>
+            <div class="project-description">
+                Automated CI/CD deployments on Kubernetes clusters using Terraform infrastructure as code. Reduced average deployment time by 15% and improved release frequency through automated pipelines.
+            </div>
+        </div>
+    </div>
+</body>
+</html>
